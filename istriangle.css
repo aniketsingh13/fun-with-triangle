@@ -1,0 +1,33 @@
+body{
+   margin: 0;
+    background-color: #11324D;
+    text-align: center;
+}
+
+.container{
+    height: 6vw;
+    background-color: #E7E0C9;
+}
+.link{
+    margin: .8rem;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    
+    font-size: xx-large;
+    color: white;
+}
+.input-triangle{
+    display: block;
+}
+label{
+    font-size: larger;
+    color: white;
+    
+}
+.input-triangle{
+    text-align: center;
+}
