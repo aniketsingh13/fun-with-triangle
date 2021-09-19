@@ -2,7 +2,7 @@ const quizContainer = document.querySelector(".quiz-container");
 const submit = document.querySelector("#submit");
 const quizTriangle = document.querySelector("#quiz-triangle");
 
-const correctAnswer = ["90°", "right"];
+const correctAnswer = ["90°", "right","acute","obtuse"];
 
 function calculateScore() {
     let score = 0;
