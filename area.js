@@ -3,19 +3,29 @@ const btnCheck = document.querySelector("#btn-check");
 const output = document.querySelector("#output");
 
 function triangleValue(a, b) {
-    sumOfTriangle = 0.5 * (a * b)
-    return sumOfTriangle;
-}
+    sumOfTriangle = 0.5 * (a * b);
+    output.innerText = "Area of triangle is " + sumOfTriangle;}
 
 
 
 function triangleCalculation() {
-    const sumOfTriangle = triangleValue(Number(inputArea[0].value), Number(inputArea[1].value));
-    output.innerText = "Area of triangle is " + sumOfTriangle;
+   var base = Number(inputArea[0].value);
+   var height = Number(inputArea[1].value);
+
+   if(base == "" || height == ""){
+       output.innerText = "please enter both the value first";
+   }
+   else if(base < 0 || height < 0){
+       output.innerText = "please enter positive value";
+   }
+   else{
+       triangleValue(base,height);
+   }
+   
 }
 
+btnCheck.addEventListener("click",triangleCalculation);
 
 
 
 
-btnCheck.addEventListener("click", triangleCalculation)
